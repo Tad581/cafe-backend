@@ -8,7 +8,6 @@ create table user(
     role varchar(20),
     UNIQUE (email)
 );
-
 insert into user(
         name,
         contactNumber,
@@ -25,3 +24,8 @@ values(
         'true',
         'admin'
     );
+create table category(
+    id int NOT NULL AUTO_INCREMENT,
+    name varchar(255) NOT NULL,
+    primary key(id)
+);
